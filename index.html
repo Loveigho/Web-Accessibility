@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header container">
+      <h1>Accessiblity Guide</h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" tabindex="0">Home</a></li>
+          <li><a href="#about" tabindex="0">About</a></li>
+          <li><a href="#services" tabindex="0">Services</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" class="main container">
+      <h1 aria-labelledby="mainHeading">Main Content Title</h1>
+      <p>
+        Web accessibility refers to the deliberate design and development of
+        websites, tools, and technologies that ensure usability for individuals
+        with disabilities. It entails enabling people to perceive, understand,
+        navigate, and interact with the web content and also facilitates their
+        active participation and contribution to the online environment.
+      </p>
+      <!-- Main content -->
+      <div role="application">
+        <form id="multiStepForm">
+          <!-- Step 1 -->
+          <div id="step1">
+            <label for="field1">Email:</label>
+            <input type="text" id="field1" name="field1" />
+            <button class="btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <article class="main-article">
+        <header>
+          <h2>Content display</h2>
+        </header>
+        <section>
+          <h2>Section Heading</h2>
+          <p>In software engineering, a software design pattern signifies a reusable and general solution for addressing recurring issues in software design within a particular context. It doesn't represent a finalized design directly translatable into source or machine code. Instead, it serves as a blueprint or guideline for resolving problems applicable across various scenarios. These patterns encapsulate standardized and effective practices enabling programmers to address common challenges when designing applications or systems.
+          </p>
+          <img src="image1.jpg" alt="Descriptive text for the image" />
+        </section>
+        <!-- Additional sections -->
+      </article>
+
+      <div aria-live="polite" tabindex="0">
+        <h2>Live Status</h2>
+        Status updates will appear here.
+      </div>
+      <video id="exampleVideo" controls>
+        <source
+          src="./WhatsApp Video 2024-01-08 at 7.00.19 AM.mp4"
+          type="video/mp4"
+        />
+        <track
+          src="captions_en.vtt"
+          kind="captions"
+          srclang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <button class="btn">Play/Pause</button>
+    </main>
+
+    <aside role="complementary" class="aside container">
+      <!-- Supplementary content -->
+      <p>
+        Ensuring web accessibility guarantees a smooth experience for all
+        website visitors, irrespective of their abilities. Regrettably, numerous
+        websites fail to adhere to recommended web accessibility standards and
+        practices, leading to challenges for users with disabilities when
+        navigating these sites.
+      </p>
+    </aside>
+
+    <footer role="contentinfo" class="footer container">
+      <!-- Footer content -->
+      <p>Copyright © 2024 University of Wolverhampton</p>
+    </footer>
+  </body>
+</html>
